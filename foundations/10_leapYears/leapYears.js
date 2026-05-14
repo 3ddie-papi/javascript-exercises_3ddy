@@ -1,12 +1,17 @@
 const leapYears = function(year) {
-  if (year % 4 == 0 && (year % 100 == 0 && year % 400 == 0)) {
-    return true;
-  } else if (year % 4 == 0 && year % 100 != 0 ) {
-    return true;
+  for (let i = year; i < 2025; i++) {
+    if (i % 4 == 0 && (i % 100 == 0 && i % 400 == 0)) {
+    console.log (`${year} is leap year!`);
+  } else if (i % 4 == 0 && i % 100 != 0 ) {
+    console.log(`${year} is leap year!`) ;
   } else {
-    return false;
+    // return false;
   }
+  }
+  
+  
 };
+leapYears(2001);
 
 
 // Do not edit below this line
